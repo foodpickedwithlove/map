@@ -379,7 +379,7 @@
       $('#fState').value = rec.state || 'CA';
       $('#fZip').value = rec.zip || '';
       $('#fFruits').value = rec.fruits || '';
-      $('#fLastVisit').value = rec.lastVisit || '';
+      $('#fLastVisit').value = rec.lastVisitDate ? fmtDate(rec.lastVisitDate) : '';
       $('#fLat').value = rec.coords ? String(rec.coords.lat) : '';
       $('#fLng').value = rec.coords ? String(rec.coords.lng) : '';
     }
